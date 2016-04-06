@@ -1,6 +1,6 @@
 /*
      
-     Rock Advenure Kids Check-in Theme
+     Rock Park Check-in Theme
      Crafted by: Spark Development Network
 
  */
@@ -25,8 +25,8 @@
 @font-weight-bold:      700;
 @font-weight-semibold:  600;
 
-@bg-color:      #dbc189;
-@text-color:    #92724C;
+@bg-color:      #85b11c;
+@text-color:    #fff;
 
 @modal-body-bg: @bg-color;
 @modal-body-text-color: @text-color;
@@ -35,22 +35,22 @@
 @modal-footer-bg: @bg-color;
 @modal-footer-text-color: @text-color;
 
-@header-text-color:     #54412b;
+@header-text-color:     #fff;
 @header-font-weight:    @font-weight-bold;
 
-@subheader-text-color:      #54412b;
+@subheader-text-color:      #bde2ef;
 @subheader-font-weight:     @font-weight-light;
 
 // Button Styles
-@btn-default-bg: #ecdebf;
-@btn-default-color:     #92724c;
-@btn-default-border:   #91876f;
+@btn-default-bg: #7f7e7e;
+@btn-default-color:     #fff;
+@btn-default-border:   #9d9c9c;
 @checkin-button-text-weight:    @font-weight-bold;
 @checkin-button-alttext-weight: @font-weight-light;
 
 @btn-primary-color:    #fff;
-@btn-primary-border:   #361c1b;
-@btn-primary-bg:    #4e2727;
+@btn-primary-border:   #b00a0e;
+@btn-primary-bg:    #e3151a;
 
 @btn-disabled-color: @btn-primary-border;
 @btn-disabled-bg: darken(@btn-primary-bg, 20%);
@@ -58,6 +58,7 @@
 // scroll bar
 @scrollbar-bg: #000;
 @scrollbar-border: #adaeaf;
+
 
 // Fonts
 // -------------------------
@@ -105,7 +106,7 @@
     src: url('../../../Assets/Fonts/OpenSans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../../../Assets/Fonts/OpenSans/OpenSans-Bold-webfont.woff') format('woff'),
          url('../../../Assets/Fonts/OpenSans/OpenSans-Bold-webfont.ttf') format('truetype'),
-         url('../../../Assets/Fonts/OpenSans/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+         url('s../../../Assets/Fonts/OpenSans/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
     font-weight: 700;
     font-style: normal;
 }
@@ -121,17 +122,19 @@
 .checkinBackgroundRetina()
 {
     background-image: url('../Assets/Images/background@2x.jpg');
-    background-size: 1348px 1024px; // should be 1/2 of the actual size
+    background-size: 1348px 1024px; // should be 1/2 of the actual
 }
+
+
 
 
 //
 // Custom Overrides
 // --------------------------------------------------
 
-.checkin-body-container // keep items from going into the bamboo
-{
-    width: 80%;
+.checkin-count h3,
+.checkin-count li {
+	color: #4c4c4b;
 }
 
 body {

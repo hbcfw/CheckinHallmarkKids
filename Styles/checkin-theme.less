@@ -26,7 +26,7 @@
 @font-weight-semibold:  600;
 
 @bg-color:      #85b11c;
-@text-color:    #fff;
+@text-color:    #45525a;
 
 @modal-body-bg: @bg-color;
 @modal-body-text-color: @text-color;
@@ -35,22 +35,22 @@
 @modal-footer-bg: @bg-color;
 @modal-footer-text-color: @text-color;
 
-@header-text-color:     #fff;
+@header-text-color:     #45525a;
 @header-font-weight:    @font-weight-bold;
 
 @subheader-text-color:      #bde2ef;
 @subheader-font-weight:     @font-weight-light;
 
 // Button Styles
-@btn-default-bg: #7f7e7e;
+@btn-default-bg: #45525a;
 @btn-default-color:     #fff;
-@btn-default-border:   #9d9c9c;
+@btn-default-border:   #19262c;
 @checkin-button-text-weight:    @font-weight-bold;
 @checkin-button-alttext-weight: @font-weight-light;
 
 @btn-primary-color:    #fff;
-@btn-primary-border:   #b00a0e;
-@btn-primary-bg:    #e3151a;
+@btn-primary-border:   #864000;
+@btn-primary-bg:    #df8d4b;
 
 @btn-disabled-color: @btn-primary-border;
 @btn-disabled-bg: darken(@btn-primary-bg, 20%);
@@ -117,6 +117,7 @@
 // --------------------------------------------------
 .checkinBackground () {
   	background: @bg-color url('../Assets/Images/background.jpg') top right no-repeat fixed;
+    //background: #fff;
 }
 
 .checkinBackgroundRetina()
@@ -141,4 +142,18 @@ body {
     -ms-touch-action: manipulation !important;
     -ms-content-zooming: none; /* Disables zooming */
     touch-action: manipulation   /* Disable any special actions on tap/touch */
+}
+
+#logo {
+    background: url('../Assets/Images/logo.png') top center no-repeat;
+    width: 195px;
+    height: 153px;
+    display: block;
+    background-size: auto 100%;
+    position: absolute;
+    left: 0;
+}
+
+img {
+    max-width: 100%;
 }
